@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form id="form-1">
+      <div>
+        <label for="operand-1">Operand 1</label>
+        <input type="number" id="operand-1" />
+      </div>
+      <div>
+        <label for="operator">Operator</label>
+        <select id="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">*</option>
+        </select>
+      </div>
+      <div>
+        <label for="operand-2">Operand 2</label>
+        <input type="number" id="operand-2" />
+      </div>
+      <div>
+        <button type="submit">Calculate</button>
+        <button id="bt-service" type="button">Calculate using API</button>
+      </div>
+      <h1 id="result"></h1>
+      <h1 id="result-service"></h1>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
